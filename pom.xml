@@ -5,14 +5,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.moscona.monastery</groupId>
-    <artifactId>monastery-api</artifactId>
+    <artifactId>monastery-bonehead</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>com.moscona.monastery-api</name>
+    <name>com.moscona.monastery-bonehead</name>
     <url>https://github.com/arnonmoscona/monastery-api</url>
     <description>
-        An API for a clustering framework with service discovery and load balancing capabilities.
+        POC code to prove out the basic viability of monastery-api interfaces
     </description>
     <licenses><license>
         <name>GNU Lesser General Public License</name>
@@ -26,7 +26,7 @@
         </developer>
     </developers>
     <scm>
-        <url>scm:git:git@github.com:arnonmoscona/monastery-api.git</url>
+        <url>scm:git:git@github.com:arnonmoscona/monastery-bonehead.git</url>
     </scm>
     <issueManagement>
         <url>http://moscona.myjetbrains.com/youtrack/issues/MO</url>
