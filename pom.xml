@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.moscona.monastery</groupId>
+    <artifactId>monastery-api</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>com.moscona.monastery-api</name>
+    <url>https://github.com/arnonmoscona/monastery-api</url>
+    <description>
+        An API for a clustering framework with service discovery and load balancing capabilities.
+    </description>
+    <licenses><license>
+        <name>GNU Lesser General Public License</name>
+        <url>https://www.gnu.org/copyleft/lesser.html</url>
+    </license></licenses>
+    <developers>
+        <developer>
+            <name>Arnon Moscona</name>
+            <url>https://github.com/arnonmoscona</url>
+            <id>arnonmoscona</id>
+        </developer>
+    </developers>
+    <scm>
+        <url>scm:git:git@github.com:arnonmoscona/monastery-api.git</url>
+    </scm>
+    <issueManagement>
+        <url>http://moscona.myjetbrains.com/youtrack/issues/MO</url>
+    </issueManagement>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
