@@ -4,8 +4,6 @@ import com.moscona.monastery.api.core.Node;
 import com.moscona.monastery.bonehead.impl.BoneHeadedNode;
 import com.moscona.monastery.bonehead.impl.GreetingCapability;
 
-import java.util.concurrent.ExecutionException;
-
 /**
  * Tty the most basic capability retrieval flow.
  */
@@ -33,7 +31,7 @@ public class TryBasicCapabilityRetrievalFlow {
                     ));
         } catch (Throwable e) {
             e.printStackTrace(System.out);
-        };
+        }
     }
 
     public static void main(String[] args) {
