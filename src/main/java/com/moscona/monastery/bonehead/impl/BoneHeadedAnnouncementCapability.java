@@ -48,11 +48,12 @@ public class BoneHeadedAnnouncementCapability implements NodeAnnouncement<Intege
                         System.out.println("Joining...");
                         Thread.sleep(1000);
                         id = node.getCluster().getNextId();
+                        node.getCluster().add(node);
                         state = NodeState.JOINED;
                         System.out.printf("Node %d joined.\n", id);
                         joinListeners.forEach(listener -> listener.accept(node));
                         future.complete(this);
-                    } catch (InterruptedException e) {
+                    } catch (Exception e) {
                         future.completeExceptionally(e);
                     }
                 }).start();

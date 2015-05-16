@@ -3,6 +3,7 @@ package com.moscona.monastery.bonehead.impl;
 import com.moscona.monastery.api.core.Capability;
 import com.moscona.monastery.api.core.Node;
 import com.moscona.monastery.cando.NodeAnnouncement;
+import com.moscona.monastery.cando.NodeInformation;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -70,5 +71,10 @@ public class BoneHeadedNode implements Node<Integer> {
     @Override
     public List<Capability> getCapabilities() {
         return new ArrayList<>(path);
+    }
+
+    @Override
+    public String getConnectionString() {
+        return "null";
     }
 }

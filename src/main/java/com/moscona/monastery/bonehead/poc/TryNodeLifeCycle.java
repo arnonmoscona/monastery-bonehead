@@ -20,7 +20,7 @@ public class TryNodeLifeCycle {
             try {
                 NodeAnnouncement<?> nodeAnnouncement = node.getCapability(NodeAnnouncement.class).get();
                 nodeAnnouncement.addJoinListener(node -> System.out.println("Node joined (known via callback)"));
-                nodeAnnouncement.announce().thenAccept(nodeAnnouncer -> {
+                nodeAnnouncement.announce().thenAcceptAsync(nodeAnnouncer -> {
                             System.out.printf("\nfinished with ID %s and state %s\n", node.getId(), nodeAnnouncer.getState());
                         }
                 );

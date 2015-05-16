@@ -17,6 +17,7 @@ public class BoneHeadedNodeBuilder implements NodeBuilder<Integer> {
     public BoneHeadedNodeBuilder() {
         capabilities = new ArrayList<>();
         capabilities.add(new BoneHeadedAnnouncementCapability()); // critical for our implementation and comes by default
+        capabilities.add(new BoneHeadedNodeDiscovery());
     }
 
     @Override
