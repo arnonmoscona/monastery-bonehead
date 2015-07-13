@@ -1,7 +1,7 @@
-package com.moscona.monastery.bonehead.impl;
+package net.projectmonastery.monastery.bonehead.impl;
 
-import com.moscona.monastery.cando.NodeDiscovery;
-import com.moscona.monastery.cando.NodeInformation;
+import net.projectmonastery.monastery.cando.NodeDiscovery;
+import net.projectmonastery.monastery.cando.NodeInformation;
 
 import java.util.ArrayList;
 import java.util.List;

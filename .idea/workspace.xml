@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03f4c9eb-5aac-4db7-9ffb-9d39558a32f2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MOVED" beforePath="C:\Users\arnon_000\projects\common\monastery\monastery-bonehead\src\main\java\com\moscona\monastery\bonehead\impl\BoneHeadedAnnouncementCapability.java" afterPath="$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/impl/BoneHeadedAnnouncementCapability.java" />
+      <change type="MOVED" beforePath="C:\Users\arnon_000\projects\common\monastery\monastery-bonehead\src\main\java\com\moscona\monastery\bonehead\impl\BoneHeadedInMemoryCluster.java" afterPath="$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/impl/BoneHeadedInMemoryCluster.java" />
+      <change type="MOVED" beforePath="C:\Users\arnon_000\projects\common\monastery\monastery-bonehead\src\main\java\com\moscona\monastery\bonehead\impl\BoneHeadedNode.java" afterPath="$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/impl/BoneHeadedNode.java" />
+      <change type="MOVED" beforePath="C:\Users\arnon_000\projects\common\monastery\monastery-bonehead\src\main\java\com\moscona\monastery\bonehead\impl\BoneHeadedNodeBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/impl/BoneHeadedNodeBuilder.java" />
+      <change type="MOVED" beforePath="C:\Users\arnon_000\projects\common\monastery\monastery-bonehead\src\main\java\com\moscona\monastery\bonehead\impl\BoneHeadedNodeDiscovery.java" afterPath="$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/impl/BoneHeadedNodeDiscovery.java" />
+      <change type="MOVED" beforePath="C:\Users\arnon_000\projects\common\monastery\monastery-bonehead\src\main\java\com\moscona\monastery\bonehead\impl\BoneHeadedNodeInformation.java" afterPath="$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/impl/BoneHeadedNodeInformation.java" />
+      <change type="MOVED" beforePath="C:\Users\arnon_000\projects\common\monastery\monastery-bonehead\src\main\java\com\moscona\monastery\bonehead\impl\GreetingCapability.java" afterPath="$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/impl/GreetingCapability.java" />
+      <change type="MOVED" beforePath="C:\Users\arnon_000\projects\common\monastery\monastery-bonehead\src\main\java\com\moscona\monastery\bonehead\impl\GreetingCapabilityImpl.java" afterPath="$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/impl/GreetingCapabilityImpl.java" />
+      <change type="MOVED" beforePath="C:\Users\arnon_000\projects\common\monastery\monastery-bonehead\src\main\java\com\moscona\monastery\bonehead\poc\TryBasicCapabilityRetrievalFlow.java" afterPath="$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/poc/TryBasicCapabilityRetrievalFlow.java" />
+      <change type="MOVED" beforePath="C:\Users\arnon_000\projects\common\monastery\monastery-bonehead\src\main\java\com\moscona\monastery\bonehead\poc\TryCapabilityWithDependency.java" afterPath="$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/poc/TryCapabilityWithDependency.java" />
+      <change type="MOVED" beforePath="C:\Users\arnon_000\projects\common\monastery\monastery-bonehead\src\main\java\com\moscona\monastery\bonehead\poc\TryNodeDiscovery.java" afterPath="$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/poc/TryNodeDiscovery.java" />
+      <change type="MOVED" beforePath="C:\Users\arnon_000\projects\common\monastery\monastery-bonehead\src\main\java\com\moscona\monastery\bonehead\poc\TryNodeLifeCycle.java" afterPath="$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/poc/TryNodeLifeCycle.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="monastery-bonehead.iws" />
@@ -29,10 +39,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="BoneHeadedNode.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/moscona/monastery/bonehead/impl/BoneHeadedNode.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/impl/BoneHeadedNode.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.66240877">
-              <caret line="41" column="36" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
+              <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -54,6 +64,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/moscona/monastery/bonehead/impl/BoneHeadedNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/impl/BoneHeadedNode.java" />
       </list>
     </option>
   </component>
@@ -197,11 +208,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bonehead" />
+              <option name="myItemId" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="poc" />
+              <option name="myItemId" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -227,11 +238,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bonehead" />
+              <option name="myItemId" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="impl" />
+              <option name="myItemId" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -867,7 +878,7 @@
     <option name="showOnlyWarnings" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/moscona/monastery/bonehead/impl/BoneHeadedNode.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/impl/BoneHeadedNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -877,7 +888,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/moscona/monastery/bonehead/impl/BoneHeadedNode.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/impl/BoneHeadedNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -887,7 +898,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/moscona/monastery/bonehead/impl/BoneHeadedNode.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/impl/BoneHeadedNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -897,7 +908,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/moscona/monastery/bonehead/impl/BoneHeadedNode.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/impl/BoneHeadedNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -907,7 +918,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/moscona/monastery/bonehead/impl/BoneHeadedNode.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/impl/BoneHeadedNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -917,7 +928,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/moscona/monastery/bonehead/impl/BoneHeadedNode.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/impl/BoneHeadedNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -927,7 +938,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/moscona/monastery/bonehead/impl/BoneHeadedNode.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/impl/BoneHeadedNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -937,7 +948,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/moscona/monastery/bonehead/impl/BoneHeadedNode.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/impl/BoneHeadedNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -947,7 +958,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/moscona/monastery/bonehead/impl/BoneHeadedNode.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/impl/BoneHeadedNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -957,7 +968,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/moscona/monastery/bonehead/impl/BoneHeadedNode.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/impl/BoneHeadedNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -967,7 +978,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/moscona/monastery/bonehead/impl/BoneHeadedNode.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/impl/BoneHeadedNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -977,7 +988,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/moscona/monastery/bonehead/impl/BoneHeadedNode.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/impl/BoneHeadedNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -987,7 +998,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/moscona/monastery/bonehead/impl/BoneHeadedNode.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/impl/BoneHeadedNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -997,7 +1008,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/moscona/monastery/bonehead/impl/BoneHeadedNode.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/impl/BoneHeadedNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1007,7 +1018,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/moscona/monastery/bonehead/impl/BoneHeadedNode.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/impl/BoneHeadedNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1017,7 +1028,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/moscona/monastery/bonehead/impl/BoneHeadedNode.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/impl/BoneHeadedNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1027,7 +1038,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/moscona/monastery/bonehead/impl/BoneHeadedNode.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/impl/BoneHeadedNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1037,7 +1048,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/moscona/monastery/bonehead/impl/BoneHeadedNode.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/impl/BoneHeadedNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1047,7 +1058,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/moscona/monastery/bonehead/impl/BoneHeadedNode.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/impl/BoneHeadedNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1057,10 +1068,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/moscona/monastery/bonehead/impl/BoneHeadedNode.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/impl/BoneHeadedNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.66240877">
-          <caret line="41" column="36" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
+          <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

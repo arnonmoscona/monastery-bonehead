@@ -1,14 +1,12 @@
-package com.moscona.monastery.bonehead.impl;
+package net.projectmonastery.monastery.bonehead.impl;
 
-import com.moscona.monastery.api.core.Capability;
-import com.moscona.monastery.api.core.Node;
-import com.moscona.monastery.cando.NodeAnnouncement;
-import com.moscona.monastery.cando.NodeState;
+import net.projectmonastery.monastery.api.core.Node;
+import net.projectmonastery.monastery.cando.NodeAnnouncement;
+import net.projectmonastery.monastery.cando.NodeState;
 
 import java.util.ArrayList;
 import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
-import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 
 /**

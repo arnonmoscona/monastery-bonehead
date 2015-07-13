@@ -1,7 +1,6 @@
-package com.moscona.monastery.bonehead.impl;
+package net.projectmonastery.monastery.bonehead.impl;
 
-import com.moscona.monastery.api.core.Node;
-import com.moscona.monastery.cando.NodeInformation;
+import net.projectmonastery.monastery.cando.NodeInformation;
 
 import java.util.ArrayList;
 import java.util.concurrent.atomic.AtomicInteger;

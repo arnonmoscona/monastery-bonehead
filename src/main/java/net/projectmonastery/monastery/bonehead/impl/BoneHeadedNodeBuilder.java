@@ -1,8 +1,8 @@
-package com.moscona.monastery.bonehead.impl;
+package net.projectmonastery.monastery.bonehead.impl;
 
-import com.moscona.monastery.api.core.Capability;
-import com.moscona.monastery.api.core.Node;
-import com.moscona.monastery.api.core.NodeBuilder;
+import net.projectmonastery.monastery.api.core.Capability;
+import net.projectmonastery.monastery.api.core.Node;
+import net.projectmonastery.monastery.api.core.NodeBuilder;
 import sun.plugin.dom.exception.InvalidStateException;
 
 import java.util.ArrayList;

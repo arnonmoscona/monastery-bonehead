@@ -1,17 +1,16 @@
-package com.moscona.monastery.bonehead.poc;
+package net.projectmonastery.monastery.bonehead.poc;
 
-import com.moscona.monastery.api.core.Node;
-import com.moscona.monastery.bonehead.impl.BoneHeadedNode;
-import com.moscona.monastery.bonehead.impl.BoneHeadedNodeBuilder;
-import com.moscona.monastery.bonehead.impl.GreetingCapability;
-import com.moscona.monastery.bonehead.impl.GreetingCapabilityImpl;
+import net.projectmonastery.monastery.api.core.Node;
+import net.projectmonastery.monastery.bonehead.impl.BoneHeadedNodeBuilder;
+import net.projectmonastery.monastery.bonehead.impl.GreetingCapability;
+import net.projectmonastery.monastery.bonehead.impl.GreetingCapabilityImpl;
 
 /**
  * Tty the most basic capability retrieval flow.
  */
 public class TryBasicCapabilityRetrievalFlow {
 
-    private void run() {
+    private void run() throws Exception {
         System.out.println("creating node");
         Node<Integer> node = new BoneHeadedNodeBuilder()
                 .add(new GreetingCapabilityImpl())
@@ -31,6 +30,10 @@ public class TryBasicCapabilityRetrievalFlow {
     }
 
     public static void main(String[] args) {
-        new TryBasicCapabilityRetrievalFlow().run();
+        try {
+            new TryBasicCapabilityRetrievalFlow().run();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

@@ -1,6 +1,6 @@
-package com.moscona.monastery.bonehead.impl;
+package net.projectmonastery.monastery.bonehead.impl;
 
-import com.moscona.monastery.cando.NodeInformation;
+import net.projectmonastery.monastery.cando.NodeInformation;
 import lombok.Value;
 
 import java.util.Optional;

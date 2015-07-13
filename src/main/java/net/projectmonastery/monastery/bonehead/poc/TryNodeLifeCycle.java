@@ -1,11 +1,8 @@
-package com.moscona.monastery.bonehead.poc;
+package net.projectmonastery.monastery.bonehead.poc;
 
-import com.moscona.monastery.api.core.Node;
-import com.moscona.monastery.bonehead.impl.BoneHeadedNode;
-import com.moscona.monastery.bonehead.impl.BoneHeadedNodeBuilder;
-import com.moscona.monastery.cando.NodeAnnouncement;
-
-import java.util.Optional;
+import net.projectmonastery.monastery.api.core.Node;
+import net.projectmonastery.monastery.bonehead.impl.BoneHeadedNodeBuilder;
+import net.projectmonastery.monastery.cando.NodeAnnouncement;
 
 /**
  * Try the async flow of a node

@@ -1,6 +1,6 @@
-package com.moscona.monastery.bonehead.impl;
+package net.projectmonastery.monastery.bonehead.impl;
 
-import com.moscona.monastery.api.core.Capability;
+import net.projectmonastery.monastery.api.core.Capability;
 
 /**
  * A silly capability that knows how to say hello

@@ -1,7 +1,6 @@
-package com.moscona.monastery.bonehead.impl;
+package net.projectmonastery.monastery.bonehead.impl;
 
-import com.moscona.monastery.api.core.Node;
-import com.moscona.monastery.cando.NodeAnnouncement;
+import net.projectmonastery.monastery.api.core.Node;
 
 /**
  * Implementation of the greeting capability

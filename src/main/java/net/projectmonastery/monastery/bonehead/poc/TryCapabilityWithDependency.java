@@ -1,11 +1,11 @@
-package com.moscona.monastery.bonehead.poc;
+package net.projectmonastery.monastery.bonehead.poc;
 
-import com.moscona.monastery.api.core.Capability;
-import com.moscona.monastery.api.core.Node;
-import com.moscona.monastery.bonehead.impl.*;
-import com.moscona.monastery.cando.NodeAnnouncement;
-
-import java.util.concurrent.ExecutionException;
+import net.projectmonastery.monastery.api.core.Capability;
+import net.projectmonastery.monastery.api.core.Node;
+import net.projectmonastery.monastery.cando.NodeAnnouncement;
+import net.projectmonastery.monastery.bonehead.impl.BoneHeadedNodeBuilder;
+import net.projectmonastery.monastery.bonehead.impl.GreetingCapability;
+import net.projectmonastery.monastery.bonehead.impl.GreetingCapabilityImpl;
 
 /**
  * Created by Arnon Moscona on 5/15/2015.
@@ -35,10 +35,14 @@ public class TryCapabilityWithDependency {
     }
 
     public static void main(String[] args) {
-        Node<Integer> node = new BoneHeadedNodeBuilder()
-                .add(new GreetingCapabilityImpl())
-                .add(new MyCapability())
-                .build();
-        node.getCapability(NodeAnnouncement.class).thenAccept(NodeAnnouncement::announce);
+        try {
+            Node<Integer> node = new BoneHeadedNodeBuilder()
+                    .add(new GreetingCapabilityImpl())
+                    .add(new MyCapability())
+                    .build();
+            node.getCapability(NodeAnnouncement.class).thenAccept(NodeAnnouncement::announce);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
