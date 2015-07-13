@@ -1,5 +1,7 @@
 # IntelliJ Idea
 *.iml
+.idea/*
+workspace.xml
 
 # Java
 *.class
