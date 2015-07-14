@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="03f4c9eb-5aac-4db7-9ffb-9d39558a32f2" name="Default" comment="">
-      <change type="MOVED" beforePath="C:\Users\arnon_000\projects\common\monastery\monastery-bonehead\src\main\java\com\moscona\monastery\bonehead\impl\BoneHeadedAnnouncementCapability.java" afterPath="$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/impl/BoneHeadedAnnouncementCapability.java" />
-      <change type="MOVED" beforePath="C:\Users\arnon_000\projects\common\monastery\monastery-bonehead\src\main\java\com\moscona\monastery\bonehead\impl\BoneHeadedInMemoryCluster.java" afterPath="$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/impl/BoneHeadedInMemoryCluster.java" />
-      <change type="MOVED" beforePath="C:\Users\arnon_000\projects\common\monastery\monastery-bonehead\src\main\java\com\moscona\monastery\bonehead\impl\BoneHeadedNode.java" afterPath="$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/impl/BoneHeadedNode.java" />
-      <change type="MOVED" beforePath="C:\Users\arnon_000\projects\common\monastery\monastery-bonehead\src\main\java\com\moscona\monastery\bonehead\impl\BoneHeadedNodeBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/impl/BoneHeadedNodeBuilder.java" />
-      <change type="MOVED" beforePath="C:\Users\arnon_000\projects\common\monastery\monastery-bonehead\src\main\java\com\moscona\monastery\bonehead\impl\BoneHeadedNodeDiscovery.java" afterPath="$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/impl/BoneHeadedNodeDiscovery.java" />
-      <change type="MOVED" beforePath="C:\Users\arnon_000\projects\common\monastery\monastery-bonehead\src\main\java\com\moscona\monastery\bonehead\impl\BoneHeadedNodeInformation.java" afterPath="$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/impl/BoneHeadedNodeInformation.java" />
-      <change type="MOVED" beforePath="C:\Users\arnon_000\projects\common\monastery\monastery-bonehead\src\main\java\com\moscona\monastery\bonehead\impl\GreetingCapability.java" afterPath="$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/impl/GreetingCapability.java" />
-      <change type="MOVED" beforePath="C:\Users\arnon_000\projects\common\monastery\monastery-bonehead\src\main\java\com\moscona\monastery\bonehead\impl\GreetingCapabilityImpl.java" afterPath="$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/impl/GreetingCapabilityImpl.java" />
-      <change type="MOVED" beforePath="C:\Users\arnon_000\projects\common\monastery\monastery-bonehead\src\main\java\com\moscona\monastery\bonehead\poc\TryBasicCapabilityRetrievalFlow.java" afterPath="$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/poc/TryBasicCapabilityRetrievalFlow.java" />
-      <change type="MOVED" beforePath="C:\Users\arnon_000\projects\common\monastery\monastery-bonehead\src\main\java\com\moscona\monastery\bonehead\poc\TryCapabilityWithDependency.java" afterPath="$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/poc/TryCapabilityWithDependency.java" />
-      <change type="MOVED" beforePath="C:\Users\arnon_000\projects\common\monastery\monastery-bonehead\src\main\java\com\moscona\monastery\bonehead\poc\TryNodeDiscovery.java" afterPath="$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/poc/TryNodeDiscovery.java" />
-      <change type="MOVED" beforePath="C:\Users\arnon_000\projects\common\monastery\monastery-bonehead\src\main\java\com\moscona\monastery\bonehead\poc\TryNodeLifeCycle.java" afterPath="$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/poc/TryNodeLifeCycle.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="03f4c9eb-5aac-4db7-9ffb-9d39558a32f2" name="Default" comment="" />
     <ignored path="monastery-bonehead.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -41,11 +27,31 @@
       <file leaf-file-name="BoneHeadedNode.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/impl/BoneHeadedNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.66240877">
-              <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.7417883">
+              <caret line="62" column="22" selection-start-line="48" selection-start-column="8" selection-end-line="62" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TryBasicCapabilityRetrievalFlow.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/poc/TryBasicCapabilityRetrievalFlow.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Node.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/moscona/monastery/monastery-api/1.0-SNAPSHOT/monastery-api-1.0-SNAPSHOT.jar!/net/projectmonastery/monastery/api/core/Node.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.478261">
+              <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -805,12 +811,12 @@
       <workItem from="1435888672166" duration="53000" />
       <workItem from="1435888754480" duration="922000" />
       <workItem from="1436224101570" duration="588000" />
-      <workItem from="1436651055265" duration="596000" />
+      <workItem from="1436651055265" duration="1270000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9973000" />
+    <option name="totallyTimeSpent" value="10647000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="2182" height="1406" extended-state="6" />
@@ -838,7 +844,7 @@
       <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24951738" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24951738" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TaskBrowser" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1068,10 +1074,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/poc/TryBasicCapabilityRetrievalFlow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/moscona/monastery/monastery-api/1.0-SNAPSHOT/monastery-api-1.0-SNAPSHOT.jar!/net/projectmonastery/monastery/api/core/Node.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.478261">
+          <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/projectmonastery/monastery/bonehead/impl/BoneHeadedNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.66240877">
-          <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.7417883">
+          <caret line="62" column="22" selection-start-line="48" selection-start-column="8" selection-end-line="62" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
