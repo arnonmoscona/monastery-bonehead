@@ -17,11 +17,6 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
-  <component name="ClassPatternConfiguration">
-    <testPatterns>
-      <classPattern testedClass="$CLASS$" testClass="test/$CLASS$Test" />
-    </testPatterns>
-  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
