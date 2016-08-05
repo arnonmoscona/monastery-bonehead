@@ -12,21 +12,23 @@ public class TryBasicCapabilityRetrievalFlow {
 
     private void run() throws Exception {
         System.out.println("creating node");
-        Node<Integer> node = new BoneHeadedNodeBuilder()
+        new BoneHeadedNodeBuilder()
                 .add(new GreetingCapabilityImpl())
-                .build();
+                .build()
+                .connect()
+        .thenAccept(node -> {
+            // get a capability
+            System.out.println("getting greeting capability");
+            node.getCapability(GreetingCapability.class).thenAccept(greetingCapability ->
+                    System.out.println(greetingCapability.greet("world")));
 
-        // get a capability
-        System.out.println("getting greeting capability");
-        node.getCapability(GreetingCapability.class).thenAccept(greetingCapability -> System.out.println(greetingCapability.greet("world")));
+            System.out.println("\ndoing it the blocking way");
+            System.out.println(node.getCapability(GreetingCapability.class).thenAccept(g -> {
+                g.greet("simple");
+            }));
+        });
 
 
-        System.out.println("\ndoing it the blocking way");
-        try {
-            System.out.println(node.getCapability(GreetingCapability.class).get().greet("simple"));
-        } catch (Throwable e) {
-            e.printStackTrace(System.out);
-        }
     }
 
     public static void main(String[] args) {

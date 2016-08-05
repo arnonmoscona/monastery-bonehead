@@ -12,21 +12,29 @@ import net.projectmonastery.monastery.cando.NodeDiscovery;
 public class TryNodeDiscovery {
 
     private void run() throws Exception {
-        Node<Integer> node = new BoneHeadedNodeBuilder()
-                .build();
-        BoneHeadedNodeDiscovery nodeDiscovery = (BoneHeadedNodeDiscovery) node.getCapability(NodeDiscovery.class).get();
-        nodeDiscovery.id = "the one";
-        nodeDiscovery.addNodeDiscoveryListener(info -> {
-            System.out.println("TryNodeDiscovery discovered: " + info);
-            System.out.println("  know nodes: (by the time I get here there may be more)");
-            nodeDiscovery.listKnowNodes().thenAccept(list->list.forEach(known-> System.out.println("  * "+known)));
-        });
-        // nothing should happen until we announce... then we should discover ourselves
-        node.getCapability(NodeAnnouncement.class).get().announce();
+        new BoneHeadedNodeBuilder()
+                .build().connect().thenAccept(node -> {
+            node.getCapability(NodeDiscovery.class).thenAccept(cap -> {
+                BoneHeadedNodeDiscovery nodeDiscovery = (BoneHeadedNodeDiscovery)cap;
+                nodeDiscovery.id = "the one";
+                nodeDiscovery.addNodeDiscoveryListener(info -> {
+                    System.out.println("TryNodeDiscovery discovered: " + info);
+                    System.out.println("  know nodes: (by the time I get here there may be more)");
+                    nodeDiscovery.listKnowNodes().thenAccept(list->list.forEach(known-> System.out.println("  * "+known)));
+                });
+                // nothing should happen until we announce... then we should discover ourselves
+                node.getCapability(NodeAnnouncement.class).thenAccept(it -> it.announce());
 
-        System.out.println("creating a second node and the first should discover it once announced");
-        Node<Integer> node2 = new BoneHeadedNodeBuilder().build();
-        node2.getCapability(NodeAnnouncement.class).get().announce();
+                System.out.println("creating a second node and the first should discover it once announced");
+                new BoneHeadedNodeBuilder().build().connect().thenAccept(n->{
+                    n.getCapability(NodeAnnouncement.class).thenAccept(c->{
+                        c.announce();
+                    });
+                });
+            });
+
+        });
+
     }
 
     public static void main(String[] args) {

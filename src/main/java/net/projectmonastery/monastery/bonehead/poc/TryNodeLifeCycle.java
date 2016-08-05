@@ -8,23 +8,18 @@ import net.projectmonastery.monastery.cando.NodeAnnouncement;
  * Try the async flow of a node
  */
 public class TryNodeLifeCycle {
-    private Node<Integer> node;
-
     private void run() {
         try {
-            node = new BoneHeadedNodeBuilder().build();
+            new BoneHeadedNodeBuilder().build().connect().thenAccept(node -> {
+                node.getCapability(NodeAnnouncement.class).thenAccept(nodeAnnouncement -> {
+                    ((NodeAnnouncement<?>)nodeAnnouncement).addJoinListener(n -> System.out.println("Node joined (known via callback)"));
 
-            try {
-                NodeAnnouncement<?> nodeAnnouncement = node.getCapability(NodeAnnouncement.class).get();
-                nodeAnnouncement.addJoinListener(node -> System.out.println("Node joined (known via callback)"));
-                nodeAnnouncement.announce().thenAcceptAsync(nodeAnnouncer -> {
-                            System.out.printf("\nfinished with ID %s and state %s\n", node.getId(), nodeAnnouncer.getState());
-                        }
-                );
-            }
-            catch(Throwable ex) {
-                throw new Exception("No node announcement capability available");
-            }
+                    ((NodeAnnouncement<?>)nodeAnnouncement).announce().thenAccept(nodeAnnouncer -> {
+                                System.out.printf("\nfinished with ID %s and state %s\n", node.getId(), nodeAnnouncer.getState());
+                            }
+                    );
+                });
+            });
         }
         catch (Throwable t) {
             System.err.println("Error: "+t);

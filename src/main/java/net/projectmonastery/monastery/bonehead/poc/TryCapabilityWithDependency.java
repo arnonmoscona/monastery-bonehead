@@ -36,11 +36,15 @@ public class TryCapabilityWithDependency {
 
     public static void main(String[] args) {
         try {
-            Node<Integer> node = new BoneHeadedNodeBuilder()
+            new BoneHeadedNodeBuilder()
                     .add(new GreetingCapabilityImpl())
                     .add(new MyCapability())
-                    .build();
-            node.getCapability(NodeAnnouncement.class).thenAccept(NodeAnnouncement::announce);
+                    .build()
+                    .connect()
+            .thenAccept(node -> {
+                node.getCapability(NodeAnnouncement.class).thenAccept(NodeAnnouncement::announce);
+            });
+
         } catch (Exception e) {
             e.printStackTrace();
         }
