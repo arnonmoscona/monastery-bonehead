@@ -7,16 +7,17 @@ import net.projectmonastery.monastery.cando.NodeState;
 import java.util.ArrayList;
 import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.CompletionStage;
 import java.util.function.Consumer;
 
 /**
  * Created by Arnon Moscona on 5/13/2015.
  */
-public class BoneHeadedAnnouncementCapability implements NodeAnnouncement<Integer> {
+public class BoneHeadedAnnouncementCapability implements NodeAnnouncement {
     private BoneHeadedNode node;
     private NodeState state = NodeState.DISCONNECTED;
     private Integer id;
-    private ArrayList<Consumer<Node<Integer>>> joinListeners;
+    private ArrayList<Consumer<Node>> joinListeners;
 
     public BoneHeadedAnnouncementCapability() {
         joinListeners = new ArrayList<>();
@@ -28,8 +29,8 @@ public class BoneHeadedAnnouncementCapability implements NodeAnnouncement<Intege
     }
 
     @Override
-    public synchronized CompletableFuture<NodeAnnouncement<Integer>> announce() {
-        CompletableFuture<NodeAnnouncement<Integer>> future = new CompletableFuture<>();
+    public synchronized CompletionStage<NodeAnnouncement> announce() {
+        CompletableFuture<NodeAnnouncement> future = new CompletableFuture<>();
         switch (state) {
             case JOINED:
                 System.out.printf("Node %d already joined. Nothing to do", node.getId().get());
@@ -70,14 +71,14 @@ public class BoneHeadedAnnouncementCapability implements NodeAnnouncement<Intege
     }
 
     @Override
-    public NodeAnnouncement<Integer> addJoinListener(Consumer<Node<Integer>> action) {
+    public NodeAnnouncement addJoinListener(Consumer<Node> action) {
         System.out.println("adding join listener");
         joinListeners.add(action);
         return this;
     }
 
     @Override
-    public void bind(Node<?> context) {
+    public void bind(Node context) {
         System.out.println("announcementCapability: binding");
         if (context.getClass().isAssignableFrom(BoneHeadedNode.class)) {
             node = (BoneHeadedNode)context;

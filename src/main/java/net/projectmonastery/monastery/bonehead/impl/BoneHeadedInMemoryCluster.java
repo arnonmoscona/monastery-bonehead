@@ -14,7 +14,7 @@ import java.util.function.Consumer;
 public class BoneHeadedInMemoryCluster {
     private static AtomicReference<BoneHeadedInMemoryCluster> instance = new AtomicReference<>(null);
     private AtomicInteger nextId = new AtomicInteger(1);
-    private ArrayList<Consumer<NodeInformation<Integer>>> newNodeActions;
+    private ArrayList<Consumer<NodeInformation>> newNodeActions;
     private ArrayList<BoneHeadedNode> nodes;
 
     private BoneHeadedInMemoryCluster() {
@@ -38,7 +38,7 @@ public class BoneHeadedInMemoryCluster {
         newNodeActions.forEach(action->action.accept(info));
     }
 
-    public void onNewNode(Consumer<NodeInformation<Integer>> action) {
+    public void onNewNode(Consumer<NodeInformation> action) {
         newNodeActions.add(action);
     }
 }

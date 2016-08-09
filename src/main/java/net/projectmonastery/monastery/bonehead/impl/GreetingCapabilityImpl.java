@@ -13,7 +13,7 @@ public class GreetingCapabilityImpl implements GreetingCapability {
     }
 
     @Override
-    public void bind(Node<?> context) {
+    public void bind(Node context) {
         node = context;
     }
 

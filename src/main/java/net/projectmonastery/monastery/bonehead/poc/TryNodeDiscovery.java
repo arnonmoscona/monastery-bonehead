@@ -1,6 +1,5 @@
 package net.projectmonastery.monastery.bonehead.poc;
 
-import net.projectmonastery.monastery.api.core.Node;
 import net.projectmonastery.monastery.bonehead.impl.BoneHeadedNodeBuilder;
 import net.projectmonastery.monastery.bonehead.impl.BoneHeadedNodeDiscovery;
 import net.projectmonastery.monastery.cando.NodeAnnouncement;
@@ -26,11 +25,12 @@ public class TryNodeDiscovery {
                 node.getCapability(NodeAnnouncement.class).thenAccept(it -> it.announce());
 
                 System.out.println("creating a second node and the first should discover it once announced");
-                new BoneHeadedNodeBuilder().build().connect().thenAccept(n->{
-                    n.getCapability(NodeAnnouncement.class).thenAccept(c->{
-                        c.announce();
-                    });
-                });
+                new BoneHeadedNodeBuilder()
+                        .buildAnd()
+                        .exceptionally(ex-> {System.out.println("Exception: "+ex); return null;})
+                        .thenAccept(nodeProvider -> nodeProvider.connect()
+                                .thenAccept(node1 -> node1.getCapability(NodeAnnouncement.class)
+                                        .thenAccept(NodeAnnouncement::announce)));
             });
 
         });

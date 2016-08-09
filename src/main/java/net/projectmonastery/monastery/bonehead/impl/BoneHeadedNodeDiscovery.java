@@ -11,10 +11,10 @@ import java.util.function.Consumer;
 /**
  * Created by Arnon Moscona on 5/15/2015.
  */
-public class BoneHeadedNodeDiscovery implements NodeDiscovery<Integer> {
+public class BoneHeadedNodeDiscovery implements NodeDiscovery {
     private final BoneHeadedInMemoryCluster cluster;
-    ArrayList<Consumer<NodeInformation<Integer>>> listeners;
-    ArrayList<NodeInformation<Integer>> discoveredNodes;
+    ArrayList<Consumer<NodeInformation>> listeners;
+    ArrayList<NodeInformation> discoveredNodes;
     public String id = "";
 
     public BoneHeadedNodeDiscovery() {
@@ -29,17 +29,17 @@ public class BoneHeadedNodeDiscovery implements NodeDiscovery<Integer> {
     }
 
     @Override
-    public NodeDiscovery addNodeDiscoveryListener(Consumer<NodeInformation<Integer>> action) {
+    public NodeDiscovery addNodeDiscoveryListener(Consumer<NodeInformation> action) {
 //        System.out.println("adding node discovery listener...");
         listeners.add(action);
         return this;
     }
 
     @Override
-    public CompletableFuture<List<NodeInformation<Integer>>> listKnowNodes() {
-        ArrayList<NodeInformation<Integer>> retval = new ArrayList<>();
+    public CompletableFuture<List<NodeInformation>> listKnowNodes() {
+        ArrayList<NodeInformation> retval = new ArrayList<>();
         retval.addAll(discoveredNodes);
-        CompletableFuture<List<NodeInformation<Integer>>> future = new CompletableFuture<>();
+        CompletableFuture<List<NodeInformation>> future = new CompletableFuture<>();
         future.complete(retval);
         return future;
     }

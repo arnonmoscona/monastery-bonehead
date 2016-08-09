@@ -9,7 +9,7 @@ import java.util.Optional;
  * Created by Arnon Moscona on 5/15/2015.
  */
 @Value
-public class BoneHeadedNodeInformation implements NodeInformation<Integer> {
+public class BoneHeadedNodeInformation implements NodeInformation {
     private Integer id;
     private String connectionString;
 

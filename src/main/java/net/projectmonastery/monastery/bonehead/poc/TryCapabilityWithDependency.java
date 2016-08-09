@@ -2,20 +2,20 @@ package net.projectmonastery.monastery.bonehead.poc;
 
 import net.projectmonastery.monastery.api.core.Capability;
 import net.projectmonastery.monastery.api.core.Node;
-import net.projectmonastery.monastery.cando.NodeAnnouncement;
 import net.projectmonastery.monastery.bonehead.impl.BoneHeadedNodeBuilder;
 import net.projectmonastery.monastery.bonehead.impl.GreetingCapability;
 import net.projectmonastery.monastery.bonehead.impl.GreetingCapabilityImpl;
+import net.projectmonastery.monastery.cando.NodeAnnouncement;
 
 /**
  * Created by Arnon Moscona on 5/15/2015.
  */
 public class TryCapabilityWithDependency {
     public static class MyCapability implements Capability {
-        private Node<?> node;
+        private Node node;
 
         @Override
-        public void bind(Node<?> context) {
+        public void bind(Node context) {
             node = context;
         }
 
@@ -24,7 +24,7 @@ public class TryCapabilityWithDependency {
             System.out.println("looking for a dependency on greeting, and want to use it after we're joined");
             node.getCapability(NodeAnnouncement.class).thenAccept(nodeAnnouncement -> {
                 System.out.println("got announcer");
-                ((NodeAnnouncement<?>)nodeAnnouncement).addJoinListener(node -> {
+                nodeAnnouncement.addJoinListener(node -> {
                     System.out.println("join listener invoked.");
                     node.getCapability(GreetingCapability.class).thenAccept(g ->
                         System.out.println("I just joined. " + g.greet("everybody"))

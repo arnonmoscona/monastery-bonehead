@@ -12,7 +12,7 @@ import java.util.concurrent.CompletableFuture;
 /**
  * A basic Node implementation that totally fakes ou a cluster
  */
-public class BoneHeadedNode implements Node<Integer> {
+public class BoneHeadedNode implements Node {
     private BoneHeadedInMemoryCluster cluster;
     private List<Capability> path;
     private Integer cachedId;
@@ -32,7 +32,7 @@ public class BoneHeadedNode implements Node<Integer> {
             return Optional.of(cachedId);
         }
         try {
-            NodeAnnouncement<?> nodeAnnouncement = getCapability(NodeAnnouncement.class).get();
+            NodeAnnouncement nodeAnnouncement = getCapability(NodeAnnouncement.class).get();
             Optional<?> optional = nodeAnnouncement.getId();
             if (optional.isPresent() && Integer.class.isAssignableFrom(optional.get().getClass())) {
                 cachedId = (Integer) optional.get();

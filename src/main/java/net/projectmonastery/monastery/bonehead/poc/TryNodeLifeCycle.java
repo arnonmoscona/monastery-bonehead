@@ -12,9 +12,9 @@ public class TryNodeLifeCycle {
         try {
             new BoneHeadedNodeBuilder().build().connect().thenAccept(node -> {
                 node.getCapability(NodeAnnouncement.class).thenAccept(nodeAnnouncement -> {
-                    ((NodeAnnouncement<?>)nodeAnnouncement).addJoinListener(n -> System.out.println("Node joined (known via callback)"));
+                    nodeAnnouncement.addJoinListener(n -> System.out.println("Node joined (known via callback)"));
 
-                    ((NodeAnnouncement<?>)nodeAnnouncement).announce().thenAccept(nodeAnnouncer -> {
+                    nodeAnnouncement.announce().thenAccept(nodeAnnouncer -> {
                                 System.out.printf("\nfinished with ID %s and state %s\n", node.getId(), nodeAnnouncer.getState());
                             }
                     );
