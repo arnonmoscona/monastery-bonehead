@@ -2,8 +2,8 @@ package net.projectmonastery.monastery.bonehead.poc;
 
 import net.projectmonastery.monastery.bonehead.impl.BoneHeadedNodeBuilder;
 import net.projectmonastery.monastery.bonehead.impl.BoneHeadedNodeDiscovery;
-import net.projectmonastery.monastery.cando.NodeAnnouncement;
-import net.projectmonastery.monastery.cando.NodeDiscovery;
+import net.projectmonastery.monastery.capabilitiy.NodeAnnouncement;
+import net.projectmonastery.monastery.capabilitiy.NodeDiscovery;
 
 /**
  * Created by Arnon Moscona on 5/15/2015.

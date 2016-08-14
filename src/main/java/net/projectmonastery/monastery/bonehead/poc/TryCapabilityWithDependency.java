@@ -5,7 +5,7 @@ import net.projectmonastery.monastery.api.core.Node;
 import net.projectmonastery.monastery.bonehead.impl.BoneHeadedNodeBuilder;
 import net.projectmonastery.monastery.bonehead.impl.GreetingCapability;
 import net.projectmonastery.monastery.bonehead.impl.GreetingCapabilityImpl;
-import net.projectmonastery.monastery.cando.NodeAnnouncement;
+import net.projectmonastery.monastery.capabilitiy.NodeAnnouncement;
 
 /**
  * Created by Arnon Moscona on 5/15/2015.

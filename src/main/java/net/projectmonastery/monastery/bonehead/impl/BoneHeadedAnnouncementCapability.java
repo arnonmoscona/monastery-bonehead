@@ -1,8 +1,8 @@
 package net.projectmonastery.monastery.bonehead.impl;
 
 import net.projectmonastery.monastery.api.core.Node;
-import net.projectmonastery.monastery.cando.NodeAnnouncement;
-import net.projectmonastery.monastery.cando.NodeState;
+import net.projectmonastery.monastery.capabilitiy.NodeAnnouncement;
+import net.projectmonastery.monastery.capabilitiy.NodeState;
 
 import java.util.ArrayList;
 import java.util.Optional;
