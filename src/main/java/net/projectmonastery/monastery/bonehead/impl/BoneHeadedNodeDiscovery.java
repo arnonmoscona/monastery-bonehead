@@ -1,7 +1,7 @@
 package net.projectmonastery.monastery.bonehead.impl;
 
-import net.projectmonastery.monastery.capabilitiy.NodeDiscovery;
-import net.projectmonastery.monastery.capabilitiy.NodeInformation;
+import net.projectmonastery.monastery.capability.NodeDiscovery;
+import net.projectmonastery.monastery.capability.NodeInformation;
 
 import java.util.ArrayList;
 import java.util.List;

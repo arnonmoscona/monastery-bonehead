@@ -1,13 +1,12 @@
 package net.projectmonastery.monastery.bonehead.impl;
 
 import net.projectmonastery.monastery.api.core.Node;
-import net.projectmonastery.monastery.capabilitiy.NodeAnnouncement;
-import net.projectmonastery.monastery.capabilitiy.NodeState;
+import net.projectmonastery.monastery.capability.NodeAnnouncement;
+import net.projectmonastery.monastery.capability.NodeState;
 
 import java.util.ArrayList;
 import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.CompletionStage;
 import java.util.function.Consumer;
 
 /**
@@ -29,7 +28,7 @@ public class BoneHeadedAnnouncementCapability implements NodeAnnouncement {
     }
 
     @Override
-    public synchronized CompletionStage<NodeAnnouncement> announce() {
+    public synchronized CompletableFuture<NodeAnnouncement> announce() {
         CompletableFuture<NodeAnnouncement> future = new CompletableFuture<>();
         switch (state) {
             case JOINED:

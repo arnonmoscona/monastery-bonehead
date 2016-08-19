@@ -8,7 +8,6 @@ import net.projectmonastery.monastery.api.core.NodeProviderBuilder;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.CompletionStage;
 
 /**
  * Created by Arnon Moscona on 5/13/2015.
@@ -49,7 +48,7 @@ public class BoneHeadedNodeBuilder implements NodeProviderBuilder {
          * @return a CompletionStage that whn complete provides a connected Node
          */
         @Override
-        public CompletionStage<Node> connect() {
+        public CompletableFuture<Node> connect() {
             CompletableFuture<Node> promise = new CompletableFuture<>();
             promise.complete(node);
             return promise;

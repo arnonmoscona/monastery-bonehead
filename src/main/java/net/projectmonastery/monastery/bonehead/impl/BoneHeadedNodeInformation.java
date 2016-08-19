@@ -1,6 +1,6 @@
 package net.projectmonastery.monastery.bonehead.impl;
 
-import net.projectmonastery.monastery.capabilitiy.NodeInformation;
+import net.projectmonastery.monastery.capability.NodeInformation;
 import lombok.Value;
 
 import java.util.Optional;

@@ -2,7 +2,7 @@ package net.projectmonastery.monastery.bonehead.impl;
 
 import net.projectmonastery.monastery.api.core.Capability;
 import net.projectmonastery.monastery.api.core.Node;
-import net.projectmonastery.monastery.capabilitiy.NodeAnnouncement;
+import net.projectmonastery.monastery.capability.NodeAnnouncement;
 
 import java.util.ArrayList;
 import java.util.List;
