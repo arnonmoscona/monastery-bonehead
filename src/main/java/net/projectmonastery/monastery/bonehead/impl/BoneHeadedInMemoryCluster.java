@@ -1,6 +1,7 @@
 package net.projectmonastery.monastery.bonehead.impl;
 
-import net.projectmonastery.monastery.cando.NodeInformation;
+
+import net.projectmonastery.monastery.capability.NodeInformation;
 
 import java.util.ArrayList;
 import java.util.concurrent.atomic.AtomicInteger;

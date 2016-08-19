@@ -1,8 +1,7 @@
 package net.projectmonastery.monastery.bonehead.poc;
 
-import net.projectmonastery.monastery.api.core.Node;
 import net.projectmonastery.monastery.bonehead.impl.BoneHeadedNodeBuilder;
-import net.projectmonastery.monastery.cando.NodeAnnouncement;
+import net.projectmonastery.monastery.capability.NodeAnnouncement;
 
 /**
  * Try the async flow of a node

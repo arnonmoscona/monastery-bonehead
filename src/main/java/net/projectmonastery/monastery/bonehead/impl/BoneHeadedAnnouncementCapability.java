@@ -1,13 +1,12 @@
 package net.projectmonastery.monastery.bonehead.impl;
 
 import net.projectmonastery.monastery.api.core.Node;
-import net.projectmonastery.monastery.cando.NodeAnnouncement;
-import net.projectmonastery.monastery.cando.NodeState;
+import net.projectmonastery.monastery.capability.NodeAnnouncement;
+import net.projectmonastery.monastery.capability.NodeState;
 
 import java.util.ArrayList;
 import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.CompletionStage;
 import java.util.function.Consumer;
 
 /**
