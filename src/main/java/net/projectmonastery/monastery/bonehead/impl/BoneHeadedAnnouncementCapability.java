@@ -29,7 +29,7 @@ public class BoneHeadedAnnouncementCapability implements NodeAnnouncement {
     }
 
     @Override
-    public synchronized CompletionStage<NodeAnnouncement> announce() {
+    public synchronized CompletableFuture<NodeAnnouncement> announce() {
         CompletableFuture<NodeAnnouncement> future = new CompletableFuture<>();
         switch (state) {
             case JOINED:

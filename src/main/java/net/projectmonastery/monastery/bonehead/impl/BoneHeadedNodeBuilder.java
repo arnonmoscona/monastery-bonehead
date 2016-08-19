@@ -46,10 +46,10 @@ public class BoneHeadedNodeBuilder implements NodeProviderBuilder {
         /**
          * Connects to the cluster, and when connected provides a Node.
          *
-         * @return a CompletionStage that whn complete provides a connected Node
+         * @return a CompletableFuture that whn complete provides a connected Node
          */
         @Override
-        public CompletionStage<Node> connect() {
+        public CompletableFuture<Node> connect() {
             CompletableFuture<Node> promise = new CompletableFuture<>();
             promise.complete(node);
             return promise;
